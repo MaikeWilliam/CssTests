@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 50px;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        nav a {
+            color: #000000;
+            text-decoration: none;
+            padding: 0px 50px 10px 0;
+            font-size: 2em;
+            position: relative;
+        }
+
+        nav a::after {
+            content: "";
+            width: 0%;
+            height: 4px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: black;
+            transition: 0.5s ease;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+    </style>
+    <body>
+        <nav>
+            <a href="">Home</a>
+            <a href="">Sobre</a>
+            <a href="">Blog</a>
+            <a href="">Contato</a>
+        </nav>
+    </body>
+</html>
